@@ -12,8 +12,10 @@ serverName = 'Test server';
 serverCreation = 'New server created';
 noServerCreation = 'No new server created';
 serverCreated = false;
+servers = ['Test Server'];
 
   onServerCreation() {
+    this.servers.push(this.serverName);
     this.serverCreated = true;
     return this.serverCreation = 'New server created with name ' + this.serverName;
   }
