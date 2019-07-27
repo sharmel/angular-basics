@@ -14,7 +14,13 @@
 <label>Server Name:</label>
 <input type="text" class="form-control" (input)="onUpdatedServerName($event)">
 <br>
-{{serverName}}
+<p>{{serverName}}</p>
+
+<!--Two-way Data binding-->
+<label>Server New Name:</label>
+<input type="text" class="form-control" [(ngModel)]="serverNewName">
+<br>
+<p>{{serverNewName}}</p>
 
 <!--
 String interpolation or Property Binding ?-->

@@ -11,6 +11,7 @@ export class ServersComponent implements OnInit {
   allowedNewService = false;
   serverCreation = 'No server created!';
   serverName = '';
+  serverNewName = 'Test Server';
 
   onUpdatedServerName(event: Event) {
     return this.serverName = (<HTMLInputElement>event.target).value;
