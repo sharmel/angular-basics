@@ -2,6 +2,12 @@
 <app-server></app-server>
 
 <button class="btn btn-primary" [disabled]="!allowedNewService">Add New Server</button>  <!--You can also bind with components and directives -->
+<br>
+<!--Event binding i.e. reacting to user input-->
+<button class="btn btn-primary"
+        [disabled]="allowedNewService"
+        (click)="onCreateNewServer()">Add New Server</button>
+<p>{{serverCreation}}</p>
 
 <!--
 String interpolation or Property Binding ?-->
