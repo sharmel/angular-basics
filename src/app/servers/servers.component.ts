@@ -19,7 +19,7 @@ export class ServersComponent implements OnInit {
 
 
   onCreateNewServer() {
-    return this.serverCreation = 'New server created!';
+    return this.serverCreation = 'New server created!. New server name is ' + this.serverNewName;
   }
   constructor() { }
 
