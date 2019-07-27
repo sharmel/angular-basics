@@ -9,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 serverName = 'Test server';
-serverCreation = 'No new server created';
+serverCreation = 'New server created';
+noServerCreation = 'No new server created';
 serverCreated = false;
 
   onServerCreation() {

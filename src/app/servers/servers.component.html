@@ -7,4 +7,9 @@
 <p>{{serverName}}</p>
 
 <button class="btn btn-primary" (click)="onServerCreation()" [disabled]="serverName === ''">Add Server</button>
-<p *ngIf="serverCreated">{{serverCreation}}</p>
+<p *ngIf="serverCreated; else noServer">{{serverCreation}}</p>
+
+<ng-template #noServer>
+  <p>{{noServerCreation}}</p>
+</ng-template>
+<!--<p *ngIf="!serverCreated">{{noServerCreation}}</p>-->
