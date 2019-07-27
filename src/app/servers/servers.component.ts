@@ -10,6 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowedNewService = false;
   serverCreation = 'No server created!';
+  serverName = '';
+
+  onUpdatedServerName(event: Event) {
+    return this.serverName = (<HTMLInputElement>event.target).value;
+  }
 
 
   onCreateNewServer() {

@@ -10,6 +10,12 @@
         (click)="onCreateNewServer()">Add New Server</button>
 <p>{{serverCreation}}</p>
 
+<!--Passing user input to event binding-->
+<label>Server Name:</label>
+<input type="text" class="form-control" (input)="onUpdatedServerName($event)">
+<br>
+{{serverName}}
+
 <!--
 String interpolation or Property Binding ?-->
 
