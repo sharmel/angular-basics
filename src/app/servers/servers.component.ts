@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
+  userName = '';
+  clickable = true;
+
+  onReset() {
+    return this.userName = '';
+  }
 
   constructor() { }
 
